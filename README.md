@@ -15,8 +15,8 @@ When we introduce functionality into bigmelon this will also be mirrored in wate
 
 ```
 library(devtools)
-devtools::install_git('https://github.com/schalkwyk/wateRmelon')
-devtools::install_git('https://github.com/schalkwyk/bigmelon')
+devtools::install_git('https://github.com/EpigeneticsExeter/wateRmelon')
+devtools::install_git('https://github.com/EpigeneticsExeter/bigmelon')
 ```
 
 ## Authors
