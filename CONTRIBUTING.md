@@ -7,7 +7,7 @@ This project is an R/Bioconductor-style package for memory-efficient DNA methyla
 Because this package is distributed through Bioconductor, all contributions must follow both Bioconductor policies and standard R package development practices. This guide outlines the conventions used in the codebase and explains how to contribute code, documentation, tests, and bug reports in a consistent, review‑friendly way. We assume you are familiar with using Git for collaborative development; if not, we recommend starting with an [introductory Git tutorial](https://coding-for-reproducible-research.github.io/CfRR_Courses/individual_modules/section_landing_pages/introduction_to_version_control.html) before contributing.
 
 
-## Making changes to the codebase
+## Quick start: Making changes to the codebase
 
 1. **Open an Issue** describing the bug you plan to fix or the feature you want to add, and assign it to yourself.
 2. **Create a feature branch** by cloning the repository and branching from `master`. When opening an issue, you can choose to auto‑create a branch linked to it.
@@ -18,6 +18,33 @@ Because this package is distributed through Bioconductor, all contributions must
 7. **Undergo review** by another developer, who may approve the PR or request additional changes.
 8. **Merge:** once approved, your PR will be merged into `master`.
 9. **Clean up** by closing the issue and deleting your feature branch.
+
+## How can I get involved?
+
+We welcome contributions of all kinds—no prior experience is needed. Here is a non-exhaustive list of simple ways to get involved, all of which help improve the package:
+
+**Report issues:** If you spot a bug or something that doesn’t work as expected, open an issue and describe the problem.
+**Suggest improvements:** Ideas for new features or enhancements are always welcome—just submit them as issues.
+**Fix bugs you find:** If you’re able to, try fixing an issue you’ve encountered and submit a pull request.
+**Help with existing issues:** Browse open issues to find bugs reported by others—many are tagged to help beginners get started.
+
+
+## Reporting bugs
+
+If you encounter a bug, please report it using GitHub Issues to help us track and resolve problems efficiently.
+
+Before opening a new issue, check the existing issues to see if the problem has already been reported. If it has, you can add relevant details or 👍 react to show it affects you too.
+
+When creating a bug report, please include:
+
+* A clear, descriptive title summarizing the issue
+* Steps to reproduce the problem (as detailed and minimal as possible)
+* Expected behavior (what you think should happen)
+* Actual behavior (what actually happens, including error messages)
+* Environment details such as OS, browser, version numbers, or dependencies
+* Screenshots or logs if applicable
+
+Clear and detailed reports help us fix issues faster. This same process can also be used to request new features, functions or enhancements. 
 
 ## Developer environment
 
@@ -44,6 +71,8 @@ devtools::test()
 devtools::check()
 
 ```
+
+You may wish to review a [tutorial on how to build R packages](https://r-pkgs.org/introduction.html), to better understand the typical development workflow, structure, and tools used for building R packages.
 
 ## Repository structure
 
