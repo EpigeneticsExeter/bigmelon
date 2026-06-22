@@ -41,7 +41,7 @@ When creating a bug report, please include:
 * Steps to reproduce the problem (as detailed and minimal as possible)
 * Expected behavior (what you think should happen)
 * Actual behavior (what actually happens, including error messages)
-* Environment details such as OS, browser, version numbers, or dependencies
+* Environment details such as OS, version numbers, or dependencies
 * Screenshots or logs if applicable
 
 Clear and detailed reports help us fix issues faster. This same process can also be used to request new features, functions or enhancements. 
@@ -51,12 +51,9 @@ Clear and detailed reports help us fix issues faster. This same process can also
 R provides several tools and packages that help automate and streamline package development. To keep the workflow as simple and reliable as possible, we recommend the following setup and development environment.
 
 #### Recommended tools
-* R (latest version)
+* R
 * Rstudio 
-* Bioconductor packages installed via
-```
-BiocManager::install()
-```
+* All `suggests` packages in `DESCRIPTION`
 * developer helpers
 ```
 install.packages(c("devtools", "roxygen2"))
@@ -80,6 +77,8 @@ You may wish to review a [tutorial on how to build R packages](https://r-pkgs.or
 - `man/`: Rd documentation files for exported functions
 - `tests/runTests.R`: package-level test runner
 - `inst/unitTests/`: lower-level internal and user-facing tests
+- `data/`: rdata objects that the package loads internally
+- `vignettes/`: source files for vignettes
 - `README.md`: project overview and installation instructions
 - `DESCRIPTION`, `NAMESPACE`: package metadata and exports
 
