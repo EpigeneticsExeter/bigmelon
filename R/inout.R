@@ -202,9 +202,10 @@ iadd2 <- function(path, gds, chunksize = NULL, force=TRUE,...){
 
 # iadd -- add data from multiple, specified, idat files providing to a specified gds file. {{{
 iadd <- function (bar, gds, n = TRUE, force=TRUE, target_cpgs = NULL, idatpath=NULL, custom_manifest = NULL, ...){
+    options(wateRmelon.custom_manifest = NULL)
+
     if(!is.null(custom_manifest)){
-        assign("custom_manifest", custom_manifest, envir = asNamespace("wateRmelon"))
-        assignInNamespace("getMethylationBeadMappers2", getMethylationBeadMappers2_customManifest, "wateRmelon")
+      options(wateRmelon.custom_manifest = custom_manifest)
     }
     rown <- TRUE
     if(is.null(target_cpgs)){
